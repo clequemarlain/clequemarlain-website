@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -48,7 +48,7 @@
   </header>
 
   <!-- Hero -->
-  <section id="home" class="pt-10">
+  <section id="home" data-section="home" class="pt-10 bg-gradient-to-br from-indigo-50 via-white to-fuchsia-50 dark:from-slate-900 dark:via-slate-950 dark:to-indigo-950">
     <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-5 gap-8 items-center">
       <div class="md:col-span-3">
         <h1 class="text-3xl md:text-5xl font-bold tracking-tight">Cleque Marlain Mboulou‑Moutoubi</h1>
@@ -56,12 +56,15 @@
         <p class="mt-2 text-lg md:text-xl text-gray-700 dark:text-gray-300">Doctorant en Informatique — Avignon Université, LIA (EA 4128)</p>
         <p class="mt-4 text-gray-700 dark:text-gray-300 max-w-2xl">Pricing & Bidding Algorithms for Distributed Edge Computing — mécanisme de Kelly, utilités α‑équitables, contraintes de budget et dynamiques d’apprentissage (BR synchrone, OGD, Dual Averaging).</p>
         <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#" class="inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-sm hover:shadow-soft border-gray-300 dark:border-white/10">Télécharger le CV (PDF)</a>
-          <a href="https://github.com/clequemarlain" class="inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-sm hover:shadow-soft border-gray-300 dark:border-white/10">GitHub</a>
-          <a href="https://cleqmarlainmboulou.github.io/" class="inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-sm hover:shadow-soft border-gray-300 dark:border-white/10">Site perso</a>
+          <a href="#" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-400 transition">Download CV (PDF)</a>
+          <a href="https://github.com/clequemarlain" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-400 transition">GitHub</a>
+          <a href="https://cleqmarlainmboulou.github.io/" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-400 transition">Personal Site</a>
         </div>
       </div>
       <div class="md:col-span-2">
+        <div class="flex items-center justify-center mb-4">
+          <img src="assets/profile.jpg" alt="Portrait of Cleque Marlain Mboulou-Moutoubi" class="h-40 w-40 rounded-2xl object-cover ring-1 ring-slate-200 dark:ring-white/10 shadow-md"/>
+        </div>
         <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 backdrop-blur border-gray-200 dark:border-white/10">
           <div class="text-sm text-gray-600 dark:text-gray-400">Affiliation</div>
           <div class="font-medium">Avignon University (LIA EA 4128), Avignon, France</div>
@@ -75,9 +78,9 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="scroll-mt-24 py-12" aria-label="About">
+  <section id="about" data-section="about" class="hidden scroll-mt-24 py-12" aria-label="About">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6">About</h2>
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">About</h2>
       <div class="grid md:grid-cols-3 gap-6">
         <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
           <h3 class="font-semibold text-lg mb-2">Bio courte</h3>
@@ -121,9 +124,9 @@
   </section>
 
   <!-- Publications -->
-  <section id="publications" class="scroll-mt-24 py-12" aria-label="Publications">
+  <section id="publications" data-section="publications" class="hidden scroll-mt-24 py-12" aria-label="Publications">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6">Publications (sélection)</h2>
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">Publications (sélection)</h2>
       <div class="space-y-4">
         <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
           <div class="text-sm text-gray-600 dark:text-gray-400">2025 • NetGCoop 2025 (accepté)</div>
@@ -145,9 +148,9 @@
   </section>
 
   <!-- Research Topics -->
-  <section id="research" class="scroll-mt-24 py-12" aria-label="Research Topics">
+  <section id="research" data-section="research" class="hidden scroll-mt-24 py-12" aria-label="Research Topics">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6">Research Topics</h2>
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">Research Topics</h2>
       <div class="grid md:grid-cols-2 gap-6">
         <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
           <h3 class="font-semibold mb-2">Allocation proportionnelle (Kelly)</h3>
@@ -170,14 +173,14 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="scroll-mt-24 py-12" aria-label="Projects">
+  <section id="projects" data-section="projects" class="hidden scroll-mt-24 py-12" aria-label="Projects">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6">Code & Projects</h2>
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">Code & Projects</h2>
       <div class="grid md:grid-cols-2 gap-6">
         <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
           <div class="font-medium">edge‑kelly‑simulator / App_KellyMechanism_Simulation</div>
           <p class="text-sm mt-1 text-gray-800 dark:text-gray-200">Cadre de simulation (PyTorch) pour jeux d’allocation de ressources avec utilités α‑équitables et budgets ; implémente BR, OGD, DA (quad/entropique), extra‑gradient, dynamiques hybrides ; visualisations complètes.</p>
-          <div class="mt-3"><a class="inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-sm hover:shadow-soft border-gray-300 dark:border-white/10" href="https://github.com/clequemarlain/App_KellyMechanism_Simulation">Repository</a></div>
+          <div class="mt-3"><a class="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-400 transition" href="https://github.com/clequemarlain/App_KellyMechanism_Simulation">Repository</a></div>
         </div>
         <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
           <div class="font-medium">ProjectKelly (recherche)</div>
@@ -189,9 +192,9 @@
   </section>
 
   <!-- Teaching (FR) -->
-  <section id="teaching" class="scroll-mt-24 py-12" aria-label="Teaching">
+  <section id="teaching" data-section="teaching" class="hidden scroll-mt-24 py-12" aria-label="Teaching">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6">Teaching</h2>
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">Teaching</h2>
       <div class="space-y-4">
         <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
           <div class="text-sm text-gray-600 dark:text-gray-400">Printemps 2026 (prévu) • Encadrement de TP</div>
@@ -203,26 +206,26 @@
   </section>
 
   <!-- Training & Certifications (détaillé) -->
-  <section id="training" class="scroll-mt-24 py-12" aria-label="Certifications">
+  <section id="training" data-section="training" class="hidden scroll-mt-24 py-12" aria-label="Certifications">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6">Training & Certifications</h2>
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">Training & Certifications</h2>
       <div class="grid md:grid-cols-2 gap-6">
         <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
           <div class="text-sm text-gray-600 dark:text-gray-400">Juillet 2025 — Toulouse</div>
           <div class="font-medium">GAIMSS 2025 Summer School</div>
           <ul class="mt-2 text-sm list-disc pl-5 text-gray-800 dark:text-gray-200">
-            <li>Thèmes : théorie des jeux, optimisation, apprentissage en ligne.</li>
-            <li>Compétences : convergence des dynamiques (BR/OGD/DA), PoA, DSC.</li>
-            <li>Livrables : notes de cours, exercices et mini‑projets.</li>
+            <li>Topics: game theory, optimization, online learning.</li>
+            <li>Skills: convergence of dynamics (BR/OGD/DA), Price of Anarchy (PoA), Diagonal Strict Concavity (DSC).</li>
+            <li>Deliverables: lecture notes, exercises, and mini‑projects.</li>
           </ul>
         </div>
         <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
           <div class="text-sm text-gray-600 dark:text-gray-400">2025 – 2026 — Paris</div>
           <div class="font-medium">AIVancity — Master AI for Business (NLP Finance)</div>
           <ul class="mt-2 text-sm list-disc pl-5 text-gray-800 dark:text-gray-200">
-            <li>NLP pour la finance : classification de textes, séries temporelles, RAG.</li>
-            <li>Outils : Python, PyTorch, pipelines MLOps légers.</li>
-            <li>Projet : extraction d’indicateurs à partir de rapports financiers.</li>
+            <li>NLP for finance: text classification, time series, retrieval‑augmented generation (RAG).</li>
+            <li>Tooling: Python, PyTorch, lightweight MLOps pipelines.</li>
+            <li>Project: extracting indicators from financial reports.</li>
           </ul>
         </div>
       </div>
@@ -230,12 +233,12 @@
   </section>
 
   <!-- Talks -->
-  <section id="talks" class="scroll-mt-24 py-12" aria-label="Présentations">
+  <section id="talks" data-section="talks" class="hidden scroll-mt-24 py-12" aria-label="Présentations">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6">Talks & Presentations</h2>
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">Talks & Presentations</h2>
       <div class="space-y-4">
         <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
-          <div class="text-sm text-gray-600 dark:text-gray-400">Novembre 2025</div>
+          <div class="text-sm text-gray-600 dark:text-gray-400">November 2025</div>
           <div class="font-medium">Best‑Response Learning in Budgeted α‑Fair Kelly Mechanisms</div>
           <div class="text-sm text-gray-700 dark:text-gray-300">PGMO Days 2025 (horaire mis à jour)</div>
         </div>
@@ -249,9 +252,9 @@
   </section>
 
   <!-- Service -->
-  <section id="service" class="scroll-mt-24 py-12" aria-label="Service & Leadership">
+  <section id="service" data-section="service" class="hidden scroll-mt-24 py-12" aria-label="Service & Leadership">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6">Service & Leadership</h2>
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">Service & Leadership</h2>
       <div class="border-l pl-4 border-gray-300 dark:border-white/10 text-sm">
         <div class="relative pl-6 pb-5">
           <div class="absolute left-0 top-1.5 h-3 w-3 rounded-full bg-gray-800 dark:bg-gray-200"></div>
@@ -264,9 +267,9 @@
   </section>
 
   <!-- Contact (+ basic form) -->
-  <section id="contact" class="scroll-mt-24 py-12" aria-label="Contact">
+  <section id="contact" data-section="contact" class="hidden scroll-mt-24 py-12" aria-label="Contact">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6">Contact</h2>
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">Contact</h2>
       <div class="grid md:grid-cols-3 gap-6">
         <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10 md:col-span-1">
           <div class="text-sm text-gray-600 dark:text-gray-400">Affiliation</div>
@@ -350,5 +353,34 @@
       document.getElementById('themeToggle').textContent = label;
     });
   </script>
+<script>
+// Simple tabbed navigation: show only one section at a time
+(function(){
+  const links = Array.from(document.querySelectorAll('header nav a[href^="#"]'));
+  const sections = Array.from(document.querySelectorAll('section[id]'));
+  function show(id){
+    sections.forEach(s=>{
+      if(s.id === id){ s.classList.remove('hidden'); }
+      else { if(!s.classList.contains('hidden')) s.classList.add('hidden'); }
+    });
+    // update active link
+    links.forEach(a=>{
+      const isActive = a.getAttribute('href') === '#' + id;
+      a.classList.toggle('underline', isActive);
+      a.classList.toggle('text-indigo-600', isActive);
+    });
+    if(id === 'home') history.replaceState(null,'','#'); else history.replaceState(null,'','#'+id);
+  }
+  links.forEach(a=>{
+    a.addEventListener('click', e=>{
+      e.preventDefault();
+      const id = a.getAttribute('href').slice(1);
+      show(id);
+    });
+  });
+  const initial = location.hash.replace('#','') || 'home';
+  show(initial);
+})();
+</script>
 </body>
 </html>
