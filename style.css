@@ -41,7 +41,8 @@ a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("assets/bandeau.jpg"); /* <-- put your Avignon/university photo here */
+  background-image: url("../assets/bandeau.jpg");
+ /* <-- put your Avignon/university photo here */
   background-size: cover;
   background-position: center;
   filter: brightness(0.55);
