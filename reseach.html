@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Cleque Marlain Mboulou-Moutoubi — Research</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="page-wrapper">
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="site-title">Cleque Marlain Mboulou-Moutoubi</div>
+      <div class="site-subtitle">PhD Candidate • Game Theory • Learning in Games • Edge Computing</div>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="content-box">
+      <h1 class="section-title">Research interests</h1>
+
+      <p>
+        My work is motivated by the increasing decentralization of computation
+        and services across edge, fog and cloud infrastructures. In such
+        systems, agents compete for limited resources and their strategic
+        decisions impact both efficiency and fairness. I study these problems
+        through the lens of <strong>non-cooperative games</strong> and
+        <strong>online learning</strong>.
+      </p>
+
+      <h2 class="section-subtitle">Proportional allocation and the Kelly mechanism</h2>
+      <p>
+        A central object in my research is the <strong>Kelly mechanism</strong>,
+        a proportional allocation rule where users submit bids and receive
+        a share of the resource proportional to their bid. I investigate
+        extensions of this mechanism under <strong>budget constraints</strong>
+        and <strong>α-fair utility functions</strong> (α = 0, 1, 2, ...),
+        with the aim of characterising existence and uniqueness of Nash
+        equilibria, as well as the efficiency of the resulting allocations.
+      </p>
+
+      <h2 class="section-subtitle">Learning dynamics in games</h2>
+      <p>
+        Beyond equilibrium analysis, I am particularly interested in how
+        agents <em>learn</em> to play in repeated interactions. I study the
+        convergence of different learning rules — such as synchronous
+        best-response dynamics, Online Gradient Descent (OGD), Dual Averaging
+        (quadratic and entropic) and extra-gradient methods — when they are
+        applied to proportional allocation games with budgets.
+      </p>
+
+      <p>
+        I analyse both the convergence in actions (bids) and the convergence in
+        utilities, and I study metrics such as distance to Nash equilibrium,
+        price of anarchy and loss of social welfare. I am also interested in
+        heterogeneous populations where different groups of agents run
+        different learning algorithms contemporaneously.
+      </p>
+
+      <h2 class="section-subtitle">Edge and fog computing applications</h2>
+      <p>
+        In the context of <strong>CoGNETs</strong>, I consider scenarios where
+        edge resources are offered by infrastructure providers (InPs) and
+        shared among mobile virtual network operators (MVNOs) or application
+        providers. The goal is to design pricing and bidding policies that are
+        both practically implementable and grounded in rigorous game-theoretic
+        analysis.
+      </p>
+
+      <h2 class="section-subtitle">Simulation tools</h2>
+      <p>
+        To support the theoretical analysis, I develop a simulation framework
+        in <strong>Python/PyTorch</strong> for resource allocation games.
+        This framework implements multiple learning dynamics, tracks convergence
+        metrics, and produces visualisations (time series, phase plots,
+        efficiency/fairness trade-offs). It is designed to be extensible and
+        reproducible, and forms part of the research software developed for
+        CoGNETs WP3.
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    © <span id="year"></span> Cleque Marlain Mboulou-Moutoubi
+  </footer>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

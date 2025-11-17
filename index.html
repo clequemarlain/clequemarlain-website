@@ -1,386 +1,98 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
+  <title>Cleque Marlain Mboulou-Moutoubi — Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cleque Marlain Mboulou‑Moutoubi — Academic CV</title>
-  <meta name="description" content="Pricing & Bidding Algorithms for Distributed Edge Computing — Kelly-type proportional allocation, α‑fair utilities, and learning dynamics." />
-  <!-- Tailwind via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    // Tailwind config (optional typography scale)
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { sans: ["Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Ubuntu", "Noto Sans", "Helvetica Neue", "Arial", "sans-serif"] },
-          boxShadow: { soft: "0 10px 30px -12px rgba(0,0,0,0.2)" }
-        }
-      }
-    }
-  </script>
-  <style>
-    /* Auto dark mode with manual override */
-    :root { color-scheme: light dark; }
-    html.dark .only-light { display:none; }
-    html:not(.dark) .only-dark { display:none; }
-  </style>
+  <meta name="description" content="PhD candidate in game theory and edge computing at Avignon University." />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-white text-gray-900 dark:bg-[#0b0d10] dark:text-gray-100 antialiased">
-  <!-- Header / Nav -->
-  <header class="sticky top-0 z-40 backdrop-blur bg-white/80 dark:bg-[#0b0d10]/80 border-b border-gray-200/60 dark:border-white/10">
-    <nav class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-      <a href="#home" class="font-semibold tracking-tight">Cleque<span class="text-gray-500 dark:text-gray-400">.M</span></a>
-      <ul class="hidden md:flex gap-6 text-sm">
-        <li><a class="hover:underline" href="#home">Home</a></li>
-        <li><a class="hover:underline" href="#about">About</a></li>
-        <li><a class="hover:underline" href="#publications">Publications</a></li>
-        <li><a class="hover:underline" href="#research">Thèmes</a></li>
-        <li><a class="hover:underline" href="#projects">Projects</a></li>
-        <li><a class="hover:underline" href="#teaching">Teaching</a></li>
-        <li><a class="hover:underline" href="#training">Certifications</a></li>
-        <li><a class="hover:underline" href="#talks">Présentations</a></li>
-        <li><a class="hover:underline" href="#contact">Contact</a></li>
-      </ul>
-      <div class="flex items-center gap-2">
-        <button id="themeToggle" class="rounded-xl border px-3 py-1.5 text-sm hover:shadow-soft border-gray-300 dark:border-white/10">🌙/☀️</button>
-      </div>
-    </nav>
+<body>
+<div class="page-wrapper">
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="site-title">Cleque Marlain Mboulou-Moutoubi</div>
+      <div class="site-subtitle">PhD Candidate • Game Theory • Learning in Games • Edge Computing</div>
+    </div>
   </header>
 
-  <!-- Hero -->
-  <section id="home" data-section="home" class="pt-10 bg-gradient-to-br from-indigo-50 via-white to-fuchsia-50 dark:from-slate-900 dark:via-slate-950 dark:to-indigo-950">
-    <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-5 gap-8 items-center">
-      <div class="md:col-span-3">
-        <h1 class="text-3xl md:text-5xl font-bold tracking-tight">Cleque Marlain Mboulou‑Moutoubi</h1>
-<p class="mt-2 text-lg md:text-xl font-medium text-gray-700 dark:text-gray-300">PhD Candidate • Game Theory • Learning in Games • Edge Computing</p>
-        <p class="mt-2 text-lg md:text-xl text-gray-700 dark:text-gray-300">Doctorant en Informatique — Avignon Université, LIA (EA 4128)</p>
-        <p class="mt-4 text-gray-700 dark:text-gray-300 max-w-2xl">Pricing & Bidding Algorithms for Distributed Edge Computing — mécanisme de Kelly, utilités α‑équitables, contraintes de budget et dynamiques d’apprentissage (BR synchrone, OGD, Dual Averaging).</p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-400 transition">Download CV (PDF)</a>
-          <a href="https://github.com/clequemarlain" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-400 transition">GitHub</a>
-          <a href="https://cleqmarlainmboulou.github.io/" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-400 transition">Personal Site</a>
-        </div>
-      </div>
-      <div class="md:col-span-2">
-        <div class="flex items-center justify-center mb-4">
-          <img src="assets/profile.jpg" alt="Portrait of Cleque Marlain Mboulou-Moutoubi" class="h-40 w-40 rounded-2xl object-cover ring-1 ring-slate-200 dark:ring-white/10 shadow-md"/>
-        </div>
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 backdrop-blur border-gray-200 dark:border-white/10">
-          <div class="text-sm text-gray-600 dark:text-gray-400">Affiliation</div>
-          <div class="font-medium">Avignon University (LIA EA 4128), Avignon, France</div>
-          <div class="mt-4 text-sm text-gray-600 dark:text-gray-400">Encadrants</div>
-          <div class="font-medium">Francesco De Pellegrini, Eitan Altman</div>
-          <div class="mt-4 text-sm text-gray-600 dark:text-gray-400">Projet</div>
-          <div class="font-medium">EU‑Japan CoGNETs — WP3 Pricing & Bidding for Edge</div>
-        </div>
-      </div>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="active">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="contact.html">Contact</a>
     </div>
-  </section>
+  </nav>
 
-  <!-- About -->
-  <section id="about" data-section="about" class="hidden scroll-mt-24 py-12" aria-label="About">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">About</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
-          <h3 class="font-semibold text-lg mb-2">Bio courte</h3>
-          <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">Doctorant au LIA dans le cadre du projet EU‑Japon CoGNETs (WP3). Je m’intéresse à l’allocation proportionnelle (Kelly), aux utilités α‑équitables sous contrainte de budget, et à la convergence des dynamiques d’apprentissage (BR synchrone, OGD, Dual Averaging, extra‑gradient) pour les systèmes edge/fog/cloud.</p>
-        </div>
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
-          <h3 class="font-semibold text-lg mb-2">Intérêts de recherche</h3>
-          <div class="text-sm">
-            <span class="inline-block rounded-full border px-3 py-1 mr-2 mb-2 border-gray-300 dark:border-white/10">Allocation de ressources edge/fog/cloud</span>
-            <span class="inline-block rounded-full border px-3 py-1 mr-2 mb-2 border-gray-300 dark:border-white/10">Mécanisme de Kelly</span>
-            <span class="inline-block rounded-full border px-3 py-1 mr-2 mb-2 border-gray-300 dark:border-white/10">Utilités α‑équitables & budgets</span>
-            <span class="inline-block rounded-full border px-3 py-1 mr-2 mb-2 border-gray-300 dark:border-white/10">Apprentissage en jeux (BR, OGD, DA)</span>
-            <span class="inline-block rounded-full border px-3 py-1 mr-2 mb-2 border-gray-300 dark:border-white/10">Network slicing, MVNO‑InP</span>
-            <span class="inline-block rounded-full border px-3 py-1 mr-2 mb-2 border-gray-300 dark:border-white/10">Optimisation & online learning</span>
-          </div>
-        </div>
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
-          <h3 class="font-semibold text-lg mb-2">Éducation</h3>
-          <div class="border-l pl-4 border-gray-300 dark:border-white/10 text-sm">
-            <div class="relative pl-6 pb-5">
-              <div class="absolute left-0 top-1.5 h-3 w-3 rounded-full bg-gray-800 dark:bg-gray-200"></div>
-              <div class="text-gray-600 dark:text-gray-400">2024 – 2027 (prévu)</div>
-              <div class="font-medium">PhD Informatique — Avignon Université, LIA</div>
-              <div class="text-gray-700 dark:text-gray-300">Thèse : Pricing and Bidding Algorithms for Distributed Edge Computing (CoGNETs WP3)</div>
-            </div>
-            <div class="relative pl-6 pb-5">
-              <div class="absolute left-0 top-1.5 h-3 w-3 rounded-full bg-gray-800 dark:bg-gray-200"></div>
-              <div class="text-gray-600 dark:text-gray-400">2022 – 2024</div>
-              <div class="font-medium">Master — Algorithmique, Calcul Symbolique & Optimisation Numérique pour l’IA (Mention Bien)</div>
-              <div class="text-gray-700 dark:text-gray-300">Univ. de Limoges — stage Clecim : autoencodeurs pour classification/reconstruction avec peu d’étiquettes.</div>
-            </div>
-            <div class="relative pl-6">
-              <div class="absolute left-0 top-1.5 h-3 w-3 rounded-full bg-gray-800 dark:bg-gray-200"></div>
-              <div class="text-gray-600 dark:text-gray-400">2019 – 2022</div>
-              <div class="font-medium">Licence Mathématiques (Mention Bien, 2ᵉ de promo)</div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <main class="main">
+    <div class="content-box home-layout">
+      <section>
+        <h1 class="section-title">Welcome to my website</h1>
+
+        <p>
+          I am a PhD candidate in Computer Science at
+          <strong>Avignon University</strong>, within the
+          <strong>Laboratoire Informatique d’Avignon (LIA, EA 4128)</strong>.
+          My PhD is part of the EU–Japan project <strong>CoGNETs</strong>, where
+          I contribute to work package WP3 on pricing and bidding algorithms for
+          distributed edge computing systems.
+        </p>
+
+        <p>
+          Broadly, my research lies at the intersection of
+          <strong>game theory</strong>, <strong>online learning</strong> and
+          <strong>edge/fog computing</strong>. I study repeated resource
+          allocation games, with a special focus on the
+          <em>Kelly mechanism</em>, budget constraints, and
+          <strong>α-fair utilities</strong>. I am interested in the
+          existence and uniqueness of equilibria, and in the convergence
+          properties of learning dynamics such as synchronous best-response,
+          Online Gradient Descent and Dual Averaging.
+        </p>
+
+        <p class="section-subtitle">News</p>
+        <p>
+          In 2025–2026, I am preparing a paper on best-response learning in
+          budgeted α-fair Kelly mechanisms (accepted for
+          <em>NetGCoop 2025</em>) and working on an extended journal version.
+          I am also involved in the preparation of WP3 deliverables for
+          CoGNETs and in teaching activities at Avignon University.
+        </p>
+
+        <p class="section-subtitle">Short bio</p>
+        <p>
+          Before starting my PhD, I obtained a Master’s degree
+          <em>“Algorithmics, Symbolic Computation and Numerical Optimization
+          for AI”</em> with honours from the University of Limoges,
+          and a Bachelor’s degree in Mathematics (2nd of my cohort, honours).
+          During my Master’s internship at <strong>Clecim</strong>, I worked on
+          deep learning models (autoencoders) for image classification and
+          reconstruction with very limited labelled data.
+        </p>
+
+        <p style="margin-top: 1.2rem;">
+          <a href="#" class="btn-primary">Download my CV (PDF)</a>
+          <!-- replace # with your CV link, e.g. assets/CV_Cleque_Marlain.pdf -->
+        </p>
+      </section>
+
+      <aside class="home-photo">
+        <!-- Replace profile.jpg with your own portrait -->
+        <img src="assets/profile.jpg" alt="Portrait of Cleque Marlain Mboulou-Moutoubi" />
+      </aside>
     </div>
-  </section>
+  </main>
 
-  <!-- Publications -->
-  <section id="publications" data-section="publications" class="hidden scroll-mt-24 py-12" aria-label="Publications">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">Publications (sélection)</h2>
-      <div class="space-y-4">
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
-          <div class="text-sm text-gray-600 dark:text-gray-400">2025 • NetGCoop 2025 (accepté)</div>
-          <div class="font-medium">Best‑Response Learning in Budgeted α‑Fair Kelly Mechanisms</div>
-          <div class="text-sm text-gray-700 dark:text-gray-300">C. M. Mboulou‑Moutoubi</div>
-        </div>
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
-          <div class="text-sm text-gray-600 dark:text-gray-400">2025 • Préprint / en préparation</div>
-          <div class="font-medium">Learning to Bid in Proportional Allocation Auctions with Budget Constraints</div>
-          <div class="text-sm text-gray-700 dark:text-gray-300">C. M. Mboulou‑Moutoubi</div>
-        </div>
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
-          <div class="text-sm text-gray-600 dark:text-gray-400">2025 • Extension journal (en cours)</div>
-          <div class="font-medium">Existence, Unicité et Convergence BR synchrone sous utilités α‑équitables</div>
-          <div class="text-sm text-gray-700 dark:text-gray-300">C. M. Mboulou‑Moutoubi</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Research Topics -->
-  <section id="research" data-section="research" class="hidden scroll-mt-24 py-12" aria-label="Research Topics">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">Research Topics</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
-          <h3 class="font-semibold mb-2">Allocation proportionnelle (Kelly)</h3>
-          <p class="text-sm text-gray-800 dark:text-gray-200">Efficacité/fairness sous utilités α‑équitables, équilibres budgétés, existence/unicité (DSC), perte d’efficacité, apprentissage et convergence BR.</p>
-        </div>
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
-          <h3 class="font-semibold mb-2">Dynamiques d’apprentissage</h3>
-          <p class="text-sm text-gray-800 dark:text-gray-200">BR synch/asynch, OGD, Dual Averaging (quadratique/entropique), extra‑gradient, variantes proximales et dynamiques hybrides multi‑populations.</p>
-        </div>
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
-          <h3 class="font-semibold mb-2">Edge/Fog Computing</h3>
-          <p class="text-sm text-gray-800 dark:text-gray-200">Tarification pour MVNO‑InP, extensions multi‑ressources, algorithmes distribués, KPIs : latence, fairness, coût/profit, temps d’adaptation.</p>
-        </div>
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
-          <h3 class="font-semibold mb-2">Outillage & Simulation</h3>
-          <p class="text-sm text-gray-800 dark:text-gray-200">Stacks Python/PyTorch, tableaux de bord Streamlit, visualisations Matplotlib/Plotly, reproductibilité des études empiriques.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" data-section="projects" class="hidden scroll-mt-24 py-12" aria-label="Projects">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">Code & Projects</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
-          <div class="font-medium">edge‑kelly‑simulator / App_KellyMechanism_Simulation</div>
-          <p class="text-sm mt-1 text-gray-800 dark:text-gray-200">Cadre de simulation (PyTorch) pour jeux d’allocation de ressources avec utilités α‑équitables et budgets ; implémente BR, OGD, DA (quad/entropique), extra‑gradient, dynamiques hybrides ; visualisations complètes.</p>
-          <div class="mt-3"><a class="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-400 transition" href="https://github.com/clequemarlain/App_KellyMechanism_Simulation">Repository</a></div>
-        </div>
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
-          <div class="font-medium">ProjectKelly (recherche)</div>
-          <p class="text-sm mt-1 text-gray-800 dark:text-gray-200">Notebooks pour études de convergence, LSW, fairness de Jain, etc.</p>
-          <div class="mt-3"><span class="text-sm text-gray-500">Bientôt public</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Teaching (FR) -->
-  <section id="teaching" data-section="teaching" class="hidden scroll-mt-24 py-12" aria-label="Teaching">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">Teaching</h2>
-      <div class="space-y-4">
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
-          <div class="text-sm text-gray-600 dark:text-gray-400">Printemps 2026 (prévu) • Encadrement de TP</div>
-          <div class="font-medium">Réseaux et Accès — IEEE 802.11, Modèle de Bianchi</div>
-          <div class="text-sm text-gray-700 dark:text-gray-300">Travaux pratiques axés sur l’analyse MAC WLAN et la modélisation de performance.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Training & Certifications (détaillé) -->
-  <section id="training" data-section="training" class="hidden scroll-mt-24 py-12" aria-label="Certifications">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">Training & Certifications</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
-          <div class="text-sm text-gray-600 dark:text-gray-400">Juillet 2025 — Toulouse</div>
-          <div class="font-medium">GAIMSS 2025 Summer School</div>
-          <ul class="mt-2 text-sm list-disc pl-5 text-gray-800 dark:text-gray-200">
-            <li>Topics: game theory, optimization, online learning.</li>
-            <li>Skills: convergence of dynamics (BR/OGD/DA), Price of Anarchy (PoA), Diagonal Strict Concavity (DSC).</li>
-            <li>Deliverables: lecture notes, exercises, and mini‑projects.</li>
-          </ul>
-        </div>
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
-          <div class="text-sm text-gray-600 dark:text-gray-400">2025 – 2026 — Paris</div>
-          <div class="font-medium">AIVancity — Master AI for Business (NLP Finance)</div>
-          <ul class="mt-2 text-sm list-disc pl-5 text-gray-800 dark:text-gray-200">
-            <li>NLP for finance: text classification, time series, retrieval‑augmented generation (RAG).</li>
-            <li>Tooling: Python, PyTorch, lightweight MLOps pipelines.</li>
-            <li>Project: extracting indicators from financial reports.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Talks -->
-  <section id="talks" data-section="talks" class="hidden scroll-mt-24 py-12" aria-label="Présentations">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">Talks & Presentations</h2>
-      <div class="space-y-4">
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
-          <div class="text-sm text-gray-600 dark:text-gray-400">November 2025</div>
-          <div class="font-medium">Best‑Response Learning in Budgeted α‑Fair Kelly Mechanisms</div>
-          <div class="text-sm text-gray-700 dark:text-gray-300">PGMO Days 2025 (horaire mis à jour)</div>
-        </div>
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10">
-          <div class="text-sm text-gray-600 dark:text-gray-400">2025</div>
-          <div class="font-medium">Pricing and Bidding Algorithms for Edge Computing Systems</div>
-          <div class="text-sm text-gray-700 dark:text-gray-300">CSI / séminaires internes (LIA)</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Service -->
-  <section id="service" data-section="service" class="hidden scroll-mt-24 py-12" aria-label="Service & Leadership">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">Service & Leadership</h2>
-      <div class="border-l pl-4 border-gray-300 dark:border-white/10 text-sm">
-        <div class="relative pl-6 pb-5">
-          <div class="absolute left-0 top-1.5 h-3 w-3 rounded-full bg-gray-800 dark:bg-gray-200"></div>
-          <div class="text-gray-600 dark:text-gray-400">2025</div>
-          <div class="font-medium">Contributeur WP3 CoGNETs (algorithmes & livrables)</div>
-          <div class="text-gray-700 dark:text-gray-300">Conception/évaluation d’algorithmes de tarification/enchères, simulations et documentation.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact (+ basic form) -->
-  <section id="contact" data-section="contact" class="hidden scroll-mt-24 py-12" aria-label="Contact">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-indigo-600 to-fuchsia-600 bg-clip-text text-transparent">Contact</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10 md:col-span-1">
-          <div class="text-sm text-gray-600 dark:text-gray-400">Affiliation</div>
-          <div class="font-medium">Avignon University (LIA EA 4128), Avignon, France</div>
-          <div class="mt-4 text-sm text-gray-600 dark:text-gray-400">Liens</div>
-          <div class="flex flex-wrap gap-2 mt-1">
-            <a href="https://github.com/clequemarlain" class="inline-flex items-center gap-2 rounded-xl border px-3 py-1.5 text-sm hover:shadow-soft border-gray-300 dark:border-white/10">GitHub</a>
-            <a href="https://cleqmarlainmboulou.github.io/" class="inline-flex items-center gap-2 rounded-xl border px-3 py-1.5 text-sm hover:shadow-soft border-gray-300 dark:border-white/10">Website</a>
-          </div>
-        </div>
-        <div class="rounded-2xl border p-6 shadow-sm bg-white/70 dark:bg-white/5 border-gray-200 dark:border-white/10 md:col-span-2">
-          <!-- Simple mailto fallback. For Formspree/Netlify, replace action accordingly. -->
-          <form id="contactForm" action="mailto:prenom.nom@univ-avignon.fr" method="post" enctype="text/plain" class="grid grid-cols-1 gap-4">
-            <div>
-              <label class="block text-sm mb-1" for="name">Nom</label>
-              <input id="name" name="name" type="text" required class="w-full rounded-xl border px-3 py-2 bg-white/90 dark:bg-white/10 border-gray-300 dark:border-white/10" />
-            </div>
-            <div>
-              <label class="block text-sm mb-1" for="email">Email</label>
-              <input id="email" name="email" type="email" required class="w-full rounded-xl border px-3 py-2 bg-white/90 dark:bg-white/10 border-gray-300 dark:border-white/10" />
-            </div>
-            <div>
-              <label class="block text-sm mb-1" for="subject">Sujet</label>
-              <input id="subject" name="subject" type="text" class="w-full rounded-xl border px-3 py-2 bg-white/90 dark:bg-white/10 border-gray-300 dark:border-white/10" />
-            </div>
-            <div>
-              <label class="block text-sm mb-1" for="message">Message</label>
-              <textarea id="message" name="message" rows="5" required class="w-full rounded-xl border px-3 py-2 bg-white/90 dark:bg-white/10 border-gray-300 dark:border-white/10"></textarea>
-            </div>
-            <div class="flex items-center gap-3">
-              <button type="submit" class="rounded-xl border px-4 py-2 text-sm hover:shadow-soft border-gray-300 dark:border-white/10">Envoyer</button>
-              <span class="text-xs text-gray-500">Astuce : pour un backend gratuit, remplacez <code>action</code> par votre endpoint <em>Formspree</em> ou activez <em>Netlify Forms</em>.</span>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-10 text-center text-sm text-gray-500 dark:text-gray-400">
-    © <span id="year"></span> Cleque Marlain Mboulou‑Moutoubi — Site CV statique (HTML + Tailwind). Mode sombre auto + bascule manuelle.
+  <footer class="footer">
+    © <span id="year"></span> Cleque Marlain Mboulou-Moutoubi
   </footer>
+</div>
 
-  <script>
-    // Year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Theme: auto by system + persistent toggle
-    const storageKey = 'cm-theme';
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-
-    function applyTheme(theme) {
-      const root = document.documentElement;
-      if (theme === 'dark' || (theme === 'auto' && prefersDark.matches)) {
-        root.classList.add('dark');
-      } else {
-        root.classList.remove('dark');
-      }
-    }
-
-    function getStoredTheme() {
-      return localStorage.getItem(storageKey) || 'auto';
-    }
-
-    function setStoredTheme(val) {
-      localStorage.setItem(storageKey, val);
-    }
-
-    // Init
-    applyTheme(getStoredTheme());
-    prefersDark.addEventListener('change', () => applyTheme(getStoredTheme()));
-
-    // Toggle cycles: auto -> dark -> light -> auto ...
-    document.getElementById('themeToggle').addEventListener('click', () => {
-      const current = getStoredTheme();
-      const next = current === 'auto' ? 'dark' : current === 'dark' ? 'light' : 'auto';
-      setStoredTheme(next);
-      applyTheme(next);
-      const label = next === 'auto' ? '🌙/☀️' : next === 'dark' ? '🌙' : '☀️';
-      document.getElementById('themeToggle').textContent = label;
-    });
-  </script>
 <script>
-// Simple tabbed navigation: show only one section at a time
-(function(){
-  const links = Array.from(document.querySelectorAll('header nav a[href^="#"]'));
-  const sections = Array.from(document.querySelectorAll('section[id]'));
-  function show(id){
-    sections.forEach(s=>{
-      if(s.id === id){ s.classList.remove('hidden'); }
-      else { if(!s.classList.contains('hidden')) s.classList.add('hidden'); }
-    });
-    // update active link
-    links.forEach(a=>{
-      const isActive = a.getAttribute('href') === '#' + id;
-      a.classList.toggle('underline', isActive);
-      a.classList.toggle('text-indigo-600', isActive);
-    });
-    if(id === 'home') history.replaceState(null,'','#'); else history.replaceState(null,'','#'+id);
-  }
-  links.forEach(a=>{
-    a.addEventListener('click', e=>{
-      e.preventDefault();
-      const id = a.getAttribute('href').slice(1);
-      show(id);
-    });
-  });
-  const initial = location.hash.replace('#','') || 'home';
-  show(initial);
-})();
+  document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
